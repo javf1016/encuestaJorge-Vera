@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8"/>
+<title th:text="${titulo}"></title>
+</head>
+<body>
+	<h1 th:text="${titulo}"></h1>
+	<table>
+		<thead>
+			<tr>
+				<th>Id</th>
+				<th>Numero de documento</th>
+				<th>Email</th>
+				<th>Comentarios</th>
+				<th>Fecha de respuesta</th>
+				<th>Consultar</th>
+				<th>Eliminar</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr th:each="encuesta: ${encuestas}">
+				<td th:text="${encuesta.id}"></td>
+				<td th:text="${encuesta.numeroDocumento}"></td>
+				<td th:text="${encuesta.email}"></td>
+				<td th:text="${encuesta.comentarios}"></td>
+				<td th:text="${encuesta.fechaRespuesta}"></td>
+				<td><a class="btn btn-primary btn-xs" th:text="'Consultar'"></a></td>
+				<td><a class="btn btn-danger btn-xs"th:text="'Eliminar'"
+				onclick="return confirm('Estas seguro que quieres eliminar?');"></a></td>
+			</tr>
+		</tbody>
+	</table>
+</body>
+</html>

@@ -39,7 +39,7 @@ public class Encuesta implements Serializable{
 	private String comentarios;
 	
 	@ManyToOne
-	@JoinColumn(name="ciudades")
+	@JoinColumn(name="marcas")
 	private Marca marcas;
 	
 	@Column(name = "fecha_respuesta")
