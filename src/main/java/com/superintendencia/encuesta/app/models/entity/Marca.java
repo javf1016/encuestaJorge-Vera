@@ -14,7 +14,7 @@ import javax.persistence.Table;
  *
  */
 @Entity
-@Table(name="MARCA")
+@Table(name="MARCAS")
 public class Marca implements Serializable{
 
 	/**

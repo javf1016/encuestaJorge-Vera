@@ -1,15 +1,10 @@
-package com.superintendencia.encuesta.app.models.dao;
+package com.superintendencia.encuesta.app.models.service;
 
 import java.util.List;
 
 import com.superintendencia.encuesta.app.models.entity.Encuesta;
 
-/**
- * 
- * @author Jorge Andres Vera Forero
- *
- */
-public interface IEncuestaDao {
+public interface IEncuestaService {
 
 	public List<Encuesta> findAll();
 	
